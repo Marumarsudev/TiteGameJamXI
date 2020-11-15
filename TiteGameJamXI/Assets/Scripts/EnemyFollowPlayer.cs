@@ -24,4 +24,10 @@ public class EnemyFollowPlayer : MonoBehaviour
     {
         agent.SetDestination(target.position);
     }
+
+    public void Desutroy()
+    {
+        Instantiate(this.gameObject, new Vector3(-13.37f, 0, 0), Quaternion.identity);
+        Destroy(this.gameObject);
+    }
 }
